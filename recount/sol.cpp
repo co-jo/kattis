@@ -1,11 +1,8 @@
 #include <iostream>
 #include <string>
 #include <unordered_map>
-#include <chrono>
 
 int main() {
-  auto start = std::chrono::high_resolution_clock::now();
-
   std::unordered_map<std::string, int> votes;
   std::string line;
 
@@ -29,10 +26,6 @@ int main() {
   } else {
     std::cout << winner << std::endl;
   }
-
-  auto end = std::chrono::high_resolution_clock::now();
-  auto diff = std::chrono::duration<double>(end - start).count();
-  std::cout << "Time: " << diff << std::endl;
 
   return 0;
 }
