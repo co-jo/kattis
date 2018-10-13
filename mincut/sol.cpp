@@ -1,8 +1,6 @@
 #include <iostream>
 #include <queue>
-#include <map>
 #include <vector>
-#include <tuple>
 #include <stack>
 #include <algorithm>
 #include <deque>
@@ -12,12 +10,9 @@
 
 using namespace std;
 
-//map<int, int> path;
-//map<int, map<int, int>> graph;
-map<int, map<int, int>> residual;
-
 int path[500];
 int graph[500][500];
+
 // Breadth-First Search
 bool search(vector<int> &visited, int source, int sink, int nodes) {
 
