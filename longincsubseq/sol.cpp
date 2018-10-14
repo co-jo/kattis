@@ -60,7 +60,6 @@ int main() {
             else if (inputs[i] > inputs[tails[length - 1]]) {
                 prevs[i] = tails[length - 1];
                 tails[length++] = i;
-                last_index = i;
             }
             // Case 3: Niether, find list with head that is closest, but still smaller.
             // This is were the required log*n term comes in, we binary search over the list
