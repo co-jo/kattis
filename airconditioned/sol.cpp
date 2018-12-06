@@ -5,11 +5,6 @@
 using namespace std;
 
 bool cmp(pair<int, int> const &lhs, pair<int, int> const &rhs) {
-//    if (lhs.first < rhs.first || lhs.first == rhs.first && rhs.second > lhs.second) {
-//        return true;
-//    } else {
-//        return false;
-//    }
     return lhs.second < rhs.second;
 }
 
@@ -42,10 +37,6 @@ int main() {
     }
 
     sort(minions.begin(), minions.end(), cmp);
-
-    //for (auto minion : minions) {
-    //    cout << minion.first << ' ' << minion.second << endl;
-    //}
 
     cout << rooms(minions) << endl;
 
